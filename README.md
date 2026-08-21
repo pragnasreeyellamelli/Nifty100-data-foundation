@@ -71,3 +71,6 @@ nifty100-data-foundation/
 ├── Makefile
 ├── requirements.txt
 └── README.md
+
+**Author**
+Yellamelli Pragna Sree
