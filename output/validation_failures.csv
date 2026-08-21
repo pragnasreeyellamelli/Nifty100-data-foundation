@@ -1,0 +1,6 @@
+rule_id,severity,column,message
+DQ-01,CRITICAL,company_id,Duplicate company_id found
+DQ-01,CRITICAL,company_id,Duplicate company_id found
+DQ-04,WARNING,"total_assets, total_liabilities",Balance sheet difference is >= 1%
+DQ-04,WARNING,"total_assets, total_liabilities",Balance sheet difference is >= 1%
+DQ-04,WARNING,"total_assets, total_liabilities",Balance sheet difference is >= 1%
