@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 **NIFTY 100 Data Foundation**
 
 A complete ETL and data-quality pipeline for processing NIFTY 100 financial data from multiple Excel sources and loading it into a structured SQLite database.
@@ -32,12 +33,44 @@ The project also includes automated data-quality validation, audit reporting, ex
 - **Git & GitHub**
 
 **📂 Project Structure**
+=======
+# Nifty100 Data Foundation
+
+A complete data ingestion, ETL, validation, and SQLite database project for Nifty 100 financial data.
+
+## Sprint 1 – Data Foundation
+
+This project implements the complete Sprint 1 Data Foundation pipeline:
+
+- Excel data ingestion
+- Data normalization
+- Data quality validation
+- SQLite database creation
+- Foreign key validation
+- Full data loading
+- Exploratory SQL queries
+- Automated unit testing
+- Load and validation audit reports
+
+## Tech Stack
+
+- Python
+- SQLite
+- Pandas
+- NumPy
+- OpenPyXL
+- Pytest
+- SQL
+
+## Project Structure
+>>>>>>> 8453fd9 (Complete Sprint 2 KPI analytics and testing)
 
 ```text
 nifty100-data-foundation/
 │
 ├── config/
 ├── data/
+<<<<<<< HEAD
 │   ├── raw/
 │   └── supporting/
 │
@@ -74,3 +107,22 @@ nifty100-data-foundation/
 
 **Author**
 Yellamelli Pragna Sree
+=======
+├── db_schema/
+├── docs/
+├── notebooks/
+├── output/
+├── reports/
+├── src/
+│   ├── etl/
+│   └── ...
+├── tests/
+│   ├── dq/
+│   └── etl/
+│
+├── .gitignore
+├── Makefile
+├── nifty100.db
+├── requirements.txt
+└── README.md
+>>>>>>> 8453fd9 (Complete Sprint 2 KPI analytics and testing)
