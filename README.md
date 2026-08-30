@@ -149,3 +149,7 @@ nifty100-data-foundation/
 ├── nifty100.db
 ├── requirements.txt
 └── README.md
+
+
+AUTHOR
+YELLAMELLI PRAGNA SREE
