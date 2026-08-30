@@ -1,17 +1,24 @@
-<<<<<<< HEAD
-**NIFTY 100 Data Foundation**
+# NIFTY 100 Data Foundation
 
-A complete ETL and data-quality pipeline for processing NIFTY 100 financial data from multiple Excel sources and loading it into a structured SQLite database.
+A complete ETL, data-quality, financial analytics, and testing pipeline for processing NIFTY 100 financial data from multiple Excel sources and loading it into a structured SQLite database.
 
-**📌 Project Overview**
+---
+
+## 📌 Project Overview
 
 This project builds the data foundation for a financial analytics system.
 
 It ingests data from **12 Excel source files**, normalizes and validates the data using Python, and loads the processed data into a SQLite database containing multiple financial datasets.
 
-The project also includes automated data-quality validation, audit reporting, exploratory SQL queries, and unit testing.
+The project is developed in multiple sprints, with each sprint adding new functionality to the data foundation and analytics pipeline.
 
-**🎯 Sprint 1 Goals**
+---
+
+# 🎯 Sprint 1 – Data Foundation
+
+Sprint 1 focuses on building the core data ingestion, ETL, validation, and database foundation.
+
+### Sprint 1 Goals
 
 - Ingest 12 source Excel files
 - Normalize financial data
@@ -22,55 +29,78 @@ The project also includes automated data-quality validation, audit reporting, ex
 - Perform exploratory SQL analysis
 - Build automated ETL tests
 
-**🛠️ Technologies Used**
+### Sprint 1 Deliverables
+
+- Excel data ingestion pipeline
+- Data normalization
+- Data-quality validation
+- SQLite database
+- Foreign-key validation
+- Data loading and audit reports
+- Exploratory SQL queries
+- Automated ETL testing
+
+---
+
+# 📊 Sprint 2 – KPI Analytics & Testing
+
+Sprint 2 extends the data foundation by adding financial KPI analytics, edge-case handling, and automated KPI testing.
+
+### Sprint 2 Goals
+
+- Implement financial KPI calculations
+- Calculate CAGR
+- Calculate cash-flow KPIs
+- Calculate profitability ratios
+- Calculate leverage and efficiency metrics
+- Handle analytical edge cases
+- Build automated KPI tests
+- Validate analytical calculations
+
+### Sprint 2 Analytics
+
+The following analytics modules were implemented:
+
+- **CAGR Analysis**
+- **Cashflow KPIs**
+- **Profitability Ratios**
+- **Leverage & Efficiency Analysis**
+- **Ratio Calculations**
+- **Ratio Edge-Case Handling**
+
+### Sprint 2 Testing
+
+Automated tests were added for:
+
+- CAGR calculations
+- Cashflow KPIs
+- Leverage and efficiency metrics
+- Profitability ratios
+
+These tests help verify that KPI calculations produce reliable results and correctly handle edge cases.
+
+---
+
+# 🛠️ Technologies Used
 
 - **Python**
 - **Pandas**
+- **NumPy**
 - **SQLite**
 - **SQL**
 - **Pytest**
 - **OpenPyXL**
 - **Git & GitHub**
 
-**📂 Project Structure**
-=======
-# Nifty100 Data Foundation
+---
 
-A complete data ingestion, ETL, validation, and SQLite database project for Nifty 100 financial data.
-
-## Sprint 1 – Data Foundation
-
-This project implements the complete Sprint 1 Data Foundation pipeline:
-
-- Excel data ingestion
-- Data normalization
-- Data quality validation
-- SQLite database creation
-- Foreign key validation
-- Full data loading
-- Exploratory SQL queries
-- Automated unit testing
-- Load and validation audit reports
-
-## Tech Stack
-
-- Python
-- SQLite
-- Pandas
-- NumPy
-- OpenPyXL
-- Pytest
-- SQL
-
-## Project Structure
->>>>>>> 8453fd9 (Complete Sprint 2 KPI analytics and testing)
+# 📂 Project Structure
 
 ```text
 nifty100-data-foundation/
 │
 ├── config/
 ├── data/
-<<<<<<< HEAD
 │   ├── raw/
 │   └── supporting/
 │
@@ -86,10 +116,18 @@ nifty100-data-foundation/
 │   ├── load_audit.csv
 │   └── validation_failures.csv
 │
+├── reports/
+│
 ├── src/
 │   ├── analytics/
+│   │   ├── cagr.py
+│   │   ├── cashflow_kpis.py
+│   │   ├── ratio_edge_cases.py
+│   │   └── ratios.py
+│   │
 │   ├── api/
 │   ├── dashboard/
+│   │
 │   └── etl/
 │       ├── loader.py
 │       ├── normaliser.py
@@ -98,31 +136,16 @@ nifty100-data-foundation/
 ├── tests/
 │   ├── api/
 │   ├── dq/
-│   └── etl/
-│
-├── nifty100.db
-├── Makefile
-├── requirements.txt
-└── README.md
-
-**Author**
-Yellamelli Pragna Sree
-=======
-├── db_schema/
-├── docs/
-├── notebooks/
-├── output/
-├── reports/
-├── src/
 │   ├── etl/
-│   └── ...
-├── tests/
-│   ├── dq/
-│   └── etl/
+│   │
+│   └── kpi/
+│       ├── test_cagr.py
+│       ├── test_cashflow_kpis.py
+│       ├── test_leverage_efficiency.py
+│       └── test_profitability_ratios.py
 │
 ├── .gitignore
 ├── Makefile
 ├── nifty100.db
 ├── requirements.txt
 └── README.md
->>>>>>> 8453fd9 (Complete Sprint 2 KPI analytics and testing)
