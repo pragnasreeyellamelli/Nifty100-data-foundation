@@ -29,59 +29,7 @@ Sprint 1 focuses on building the core data ingestion, ETL, validation, and datab
 - Perform exploratory SQL analysis
 - Build automated ETL tests
 
-### Sprint 1 Deliverables
-
-- Excel data ingestion pipeline
-- Data normalization
-- Data-quality validation
-- SQLite database
-- Foreign-key validation
-- Data loading and audit reports
-- Exploratory SQL queries
-- Automated ETL testing
-
----
-
-# 📊 Sprint 2 – KPI Analytics & Testing
-
-Sprint 2 extends the data foundation by adding financial KPI analytics, edge-case handling, and automated KPI testing.
-
-### Sprint 2 Goals
-
-- Implement financial KPI calculations
-- Calculate CAGR
-- Calculate cash-flow KPIs
-- Calculate profitability ratios
-- Calculate leverage and efficiency metrics
-- Handle analytical edge cases
-- Build automated KPI tests
-- Validate analytical calculations
-
-### Sprint 2 Analytics
-
-The following analytics modules were implemented:
-
-- **CAGR Analysis**
-- **Cashflow KPIs**
-- **Profitability Ratios**
-- **Leverage & Efficiency Analysis**
-- **Ratio Calculations**
-- **Ratio Edge-Case Handling**
-
-### Sprint 2 Testing
-
-Automated tests were added for:
-
-- CAGR calculations
-- Cashflow KPIs
-- Leverage and efficiency metrics
-- Profitability ratios
-
-These tests help verify that KPI calculations produce reliable results and correctly handle edge cases.
-
----
-
-# 🛠️ Technologies Used
+**🛠️ Technologies Used**
 
 - **Python**
 - **Pandas**
@@ -90,6 +38,8 @@ These tests help verify that KPI calculations produce reliable results and corre
 - **SQL**
 - **Pytest**
 - **OpenPyXL**
+- **Matplotlib**
+- **PyYAML**
 - **Git & GitHub**
 
 ---
@@ -98,8 +48,11 @@ These tests help verify that KPI calculations produce reliable results and corre
 
 ```text
 nifty100-data-foundation/
+
 │
 ├── config/
+│   └── screener_config.yaml
+│
 ├── data/
 │   ├── raw/
 │   └── supporting/
@@ -116,18 +69,11 @@ nifty100-data-foundation/
 │   ├── load_audit.csv
 │   └── validation_failures.csv
 │
-├── reports/
-│
 ├── src/
 │   ├── analytics/
-│   │   ├── cagr.py
-│   │   ├── cashflow_kpis.py
-│   │   ├── ratio_edge_cases.py
-│   │   └── ratios.py
-│   │
 │   ├── api/
-│   ├── dashboard/
 │   │
+│   ├── dashboard/
 │   └── etl/
 │       ├── loader.py
 │       ├── normaliser.py
@@ -149,7 +95,6 @@ nifty100-data-foundation/
 ├── nifty100.db
 ├── requirements.txt
 └── README.md
+>>>>>>> 8453fd9 (Complete Sprint 2 KPI analytics and testing)
 
-
-AUTHOR
-YELLAMELLI PRAGNA SREE
+YELLAMELLI PRAGNASREE
